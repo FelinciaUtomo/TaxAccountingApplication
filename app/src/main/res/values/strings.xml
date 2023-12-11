@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tax Accounting Application</string>
+
+    <string name="basicAccounting">
+        \Accounting is the process of tracking and recording financial activity.
+    </string>
+
+    <string name="Types1">
+        \1. Financial Accounting (Akuntansi Keuangan)
+    </string>
+
+    <string name="Detailed1">
+        \Financial Accounting refers to the process carried out to produce financial statements.
+    </string>
+
+    <string name="Types2">
+        \2. Managerial Accounting (Akuntansi Manajerial)
+    </string>
+
+    <string name="Detailed2">
+        \The purpose of making managerial accounting such as policy making, forecasting and control is useful for internal management parties.
+    </string>
+
+    <string name="COA1">
+        \1. Asset / Aset
+    </string>
+
+    <string name="COA2">
+        \2. Liability / Liabilitas
+    </string>
+
+    <string name="COA3">
+        \3. Equity / Ekuitas
+    </string>
+
+    <string name="COA4">
+        \4. Revenue / Pendapatan
+    </string>
+
+    <string name="COA5">
+        \5. Expense / Beban
+    </string>
+
+    <string name="BAEquations">
+        \Asset = Liability + Equity.
+    </string>
+</resources>

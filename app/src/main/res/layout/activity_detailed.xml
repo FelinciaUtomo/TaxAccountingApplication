@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailedActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailName"
+        android:layout_marginTop="14dp"
+        android:text="Basic Accounting"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Accounting Terminology and Concepts"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/basicAccounting"
+        android:textSize="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/detailAccounting"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types of Accounting"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Types1"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/Type1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Detailed1"
+        android:textSize="16dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/detailType1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Types2"
+        android:textSize="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/Type2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Detailed2"
+        android:textSize="16dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/detailType2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chart of Account (COA)"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/COA1"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/COA1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/COA2"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/COA2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/COA3"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/COA3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/COA4"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/COA4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/COA5"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/COA5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Accounting Equations"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BAEquations"
+        android:textSize="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/BasicAccountingEquiations"/>
+
+
+</LinearLayout>
