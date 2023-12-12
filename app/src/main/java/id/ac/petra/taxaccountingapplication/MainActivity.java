@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import id.ac.petra.taxaccountingapplication.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -29,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -99,19 +99,26 @@ public class MainActivity extends AppCompatActivity {
         closDrawer(drawerLayout);
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
     int[] BasicAccountingList = {R.string.basicAccounting, R.string.BAEquations, R.string.COA1,
             R.string.COA2, R.string.COA3, R.string.COA4, R.string.COA5, R.string.Detailed1,
             R.string.Detailed2, R.string.Types1, R.string.Types2};
 
-    for (int i = 0; i < BasicAccountingList.short; i++){
+    for (int i = 0; i < BasicAccountingList.short i++){
         listData = new ListData(BasicAccountingList[i]);
         dataArrayList.add(listData);
     }
     listAdapter = new ListAdapter(MainActivity.this, dataArrayList);
-    binding.listview.setAdapter(listAdapter);
-    binding.listview.setClickable(true);
+    binding.listView.setAdapter(listAdapter);
+    binding.listView.setClickable(true);
 
-      binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             Intent intent = new Intent(MainActivity.this, DetailedActivity.class);
