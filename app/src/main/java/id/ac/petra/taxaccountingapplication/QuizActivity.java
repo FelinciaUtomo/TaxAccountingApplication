@@ -40,7 +40,7 @@ public class QuizActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(QuizActivity.this, MainActivity.class);
+                redirectActivity(QuizActivity.this, DrawerActivity.class);
             }
         });
 

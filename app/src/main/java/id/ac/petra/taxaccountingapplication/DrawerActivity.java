@@ -8,22 +8,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import id.ac.petra.taxaccountingapplication.databinding.ActivityMainBinding;
-
-public class MainActivity extends AppCompatActivity {
-
-    ActivityMainBinding binding;
-    ListAdapter listAdapter;
-    ArrayList<ListData> dataArrayList = new ArrayList<>();
-    ListData listData;
-
+public class DrawerActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageView menu;
     LinearLayout home, quiz, download, logout;
@@ -31,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_drawer);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
@@ -57,21 +46,21 @@ public class MainActivity extends AppCompatActivity {
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(MainActivity.this, QuizActivity.class);
+                redirectActivity(DrawerActivity.this, QuizActivity.class);
             }
         });
 
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(MainActivity.this, DownloadActivity.class);
+                redirectActivity(DrawerActivity.this, DownloadActivity.class);
             }
         });
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DrawerActivity.this, "Logout", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -98,33 +87,4 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         closDrawer(drawerLayout);
     }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-    int[] BasicAccountingList = {R.string.basicAccounting, R.string.BAEquations, R.string.COA1,
-            R.string.COA2, R.string.COA3, R.string.COA4, R.string.COA5, R.string.Detailed1,
-            R.string.Detailed2, R.string.Types1, R.string.Types2};
-
-    for (int i = 0; i < BasicAccountingList.short i++){
-        listData = new ListData(BasicAccountingList[i]);
-        dataArrayList.add(listData);
-    }
-    listAdapter = new ListAdapter(MainActivity.this, dataArrayList);
-    binding.listView.setAdapter(listAdapter);
-    binding.listView.setClickable(true);
-
-      binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Intent intent = new Intent(MainActivity.this, DetailedActivity.class);
-            intent.putExtra("name", BasicAccountingList[i]);
-            startActivity(intent);
-        }
-    });
-}
 }

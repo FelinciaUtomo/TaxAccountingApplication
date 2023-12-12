@@ -22,7 +22,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Basic Accounting Terminology and Concepts"
+        android:id="@+id/concepts"
+        android:text="@string/Concepts"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -41,7 +42,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Types of Accounting"
+        android:id="@+id/typesAcc"
+        android:text="@string/TypesAccounting"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -88,7 +90,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chart of Account (COA)"
+        android:id="@+id/COA"
+        android:text="@string/COA"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -143,6 +146,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/BasicAccountingEquations"
         android:text="Basic Accounting Equations"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -157,7 +161,7 @@
         android:textSize="16dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="12dp"
-        android:id="@+id/BasicAccountingEquiations"/>
+        android:id="@+id/BAEquiations"/>
 
 
 </LinearLayout>

@@ -40,7 +40,7 @@ public class DownloadActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                redirectActivity(DownloadActivity.this, MainActivity.class);
+                redirectActivity(DownloadActivity.this, DrawerActivity.class);
             }
         });
 

@@ -13,7 +13,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String databaseName = "Signup_db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "Signup.db", null, 1);
+        super(context, "SignLog.db", null, 1);
     }
 
     @Override
@@ -22,8 +22,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase MyDatabase, int 1, int 11) {
-        MyDatabase.execSQL("drop table if exists allusers");
+    public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
+        MyDB.execSQL("drop Table if exists users");
     }
 
     public Boolean insertData(String email, String password){

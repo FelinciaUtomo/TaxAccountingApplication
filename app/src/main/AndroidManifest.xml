@@ -13,6 +13,26 @@
         android:theme="@style/Theme.TaxAccountingApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ListMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list_main"
+            android:theme="@style/Theme.TaxAccountingApplication" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.TaxAccountingApplication" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list_view"
+            android:theme="@style/Theme.TaxAccountingApplication" />
+        <activity
+            android:name=".ArrayListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_array_list"
+            android:theme="@style/Theme.TaxAccountingApplication" />
+        <activity
             android:name=".SignupActivity"
             android:exported="true"
             android:label="@string/title_activity_signup"
@@ -36,10 +56,8 @@
             android:name=".QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:name=".DrawerActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
